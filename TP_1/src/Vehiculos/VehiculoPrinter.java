@@ -25,6 +25,6 @@ public class VehiculoPrinter {
         System.out.println("Marca: " + a.getMarca());
         System.out.println("Anio: " + a.getAnio());
         System.out.println("capacidadCargaKg: " + a.getCapacidadCargaKg());
-        System.out.println("Tiene Acoplado: " + a.getCantidadPasajeros());
+        System.out.println("Cantidad Pasajeros: " + a.getCantidadPasajeros());
     }
 }

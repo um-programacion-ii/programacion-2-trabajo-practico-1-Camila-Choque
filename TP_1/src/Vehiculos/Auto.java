@@ -15,4 +15,8 @@ public class Auto extends Vehiculo {
     public void setCantidadPasajeros(int cantidadPasajeros) {
         this.cantidadPasajeros = cantidadPasajeros;
     }
+
+    public String toString() {
+        return super.toString() + "\nCantidad de pasajeros: " + cantidadPasajeros;
+    }
 }
