@@ -15,5 +15,5 @@ public class Camion extends Vehiculo {
     public void setTieneAcoplado(boolean tieneAcoplado) {
         this.tieneAcoplado = tieneAcoplado;
     }
-    
+
 }

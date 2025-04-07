@@ -1,6 +1,7 @@
 package app;
 import Vehiculos.VehiculoPrinter;
 import Vehiculos.Vehiculo;
+import Vehiculos.Camion;
 
 
 
@@ -11,8 +12,8 @@ public class Main {
         DatosVehiculo("AE1478", "Peugeot", 2011, -50);
         DatosVehiculo ("AA1489", "Kia", 2024, 30);
         DatosVehiculo ("AB4589", "Mercedes", 2025, 80);
-
-
+        DatosCamion("AA124","Volvo",2020,15000,true);
+        DatosCamion(null,"Volvo",2020,15000,true);
 
     }
 
@@ -29,5 +30,18 @@ public class Main {
             System.out.println("                             ");
         }
 
+    }
+    //IMPRIME CAMIONES Y CAMIONES CON ERRORES
+    public static void DatosCamion(String patente, String marca, int anio, double capacidadCargaKg, boolean tieneAcoplado) {
+        try {
+            Camion c = new Camion(patente, marca, anio, capacidadCargaKg, tieneAcoplado);
+            System.out.println("INFORMACION DEL CAMION");
+            VehiculoPrinter.mostrarInformacion(c);
+            System.out.println("                             ");
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("                             ");
+        }
     }
 }
