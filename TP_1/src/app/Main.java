@@ -13,8 +13,8 @@ public class Main {
         ArrayList<Vehiculo> listavehiculos = new ArrayList<>();
 
 
-        listavehiculos.add(new Vehiculo("AA1489", "Kia", 2024, 30));
-        listavehiculos.add(new Vehiculo("AB4589", "Mercedes", 2025, 80));
+        //listavehiculos.add(new Vehiculo("AA1489", "Kia", 2024, 30));
+        //listavehiculos.add(new Vehiculo("AB4589", "Mercedes", 2025, 80));
         listavehiculos.add(new Camion("AA124", "Volvo", 2020, 15000, true));
         listavehiculos.add(new Auto("AH1234", "Mazda", 2024, 500, 5));
 
@@ -27,21 +27,12 @@ public class Main {
                 System.out.println("--------------------");
 
             }
-
             else if (vehiculo instanceof Camion) {
                 System.out.println("INFORMACION DE CAMION: " );
                 VehiculoPrinter.mostrarInformacion((Camion) vehiculo);
                 System.out.println("--------------------");
 
             }
-            else {
-                System.out.println("INFORMACION DE VEHICULO: " );
-                VehiculoPrinter.mostrarInformacion(vehiculo);
-                System.out.println("--------------------");
-
-            }
         }
-
-
     }
 }
