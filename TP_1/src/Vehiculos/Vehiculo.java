@@ -70,18 +70,13 @@ public class Vehiculo {
 
     //METODO
     public void mostrarInformacion(){
-        System.out.println("Patente: " + patente);
-        System.out.println("Marca: " + marca);
-        System.out.println("Anio: " + anio);
-        System.out.println("capacidadCargaKg: " + capacidadCargaKg);
+        System.out.println("Patente: " + this.getPatente());
+        System.out.println("Marca: " + this.getMarca());
+        System.out.println("Anio: " + this.getAnio());
+        System.out.println("capacidadCargaKg: " + this.getCapacidadCargaKg());
     }
 
-    /*
-    public static void main(String[] args) {
-        Vehiculos.Vehiculo v1 = new Vehiculos.Vehiculo("ABC2056", "Toyota Corolla", 2020, 52  );
-        v1.mostrarInformacion(); // Esto imprimirá los datos del vehículo
-    }
-     */
+
 
 
 }
