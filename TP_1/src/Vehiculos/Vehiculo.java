@@ -1,6 +1,6 @@
 package Vehiculos;
 
-public class Vehiculo {
+public  class  Vehiculo {
     private String patente;
     private String marca;
     private int anio;
@@ -66,9 +66,18 @@ public class Vehiculo {
             throw new IllegalArgumentException("La capacidad de carga debe ser un valor positivo.");
         }
         this.capacidadCargaKg = capacidadCargaKg;
+
+    }
+    /*
+    @Override
+    public String toString() {
+        return "Patente: " + patente +
+                "\nMarca: " + marca +
+                "\nAño: " + anio +
+                "\nCapacidad de carga (Kg): " + capacidadCargaKg;
     }
 
-
+     */
 
 
 

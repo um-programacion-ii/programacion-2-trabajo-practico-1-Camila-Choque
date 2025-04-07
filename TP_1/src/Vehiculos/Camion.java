@@ -15,5 +15,8 @@ public class Camion extends Vehiculo {
     public void setTieneAcoplado(boolean tieneAcoplado) {
         this.tieneAcoplado = tieneAcoplado;
     }
-
+    @Override
+    public String toString() {
+        return super.toString() + "\nTiene acoplado: " + (tieneAcoplado ? "Sí" : "No");
+    }
 }
