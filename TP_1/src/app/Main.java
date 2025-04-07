@@ -19,6 +19,29 @@ public class Main {
         listavehiculos.add(new Auto("AH1234", "Mazda", 2024, 500, 5));
 
 
+        // Recorrer la lista e imprimir los atributos de cada vehículo
+        for (Vehiculo vehiculo : listavehiculos) {
+            if (vehiculo instanceof Auto) {
+                System.out.println("INFORMACION DE AUTO: " );
+                VehiculoPrinter.mostrarInformacion((Auto) vehiculo);
+                System.out.println("--------------------");
+
+            }
+
+            else if (vehiculo instanceof Camion) {
+                System.out.println("INFORMACION DE CAMION: " );
+                VehiculoPrinter.mostrarInformacion((Camion) vehiculo);
+                System.out.println("--------------------");
+
+            }
+            else {
+                System.out.println("INFORMACION DE VEHICULO: " );
+                VehiculoPrinter.mostrarInformacion(vehiculo);
+                System.out.println("--------------------");
+
+            }
+        }
+
 
     }
 }
