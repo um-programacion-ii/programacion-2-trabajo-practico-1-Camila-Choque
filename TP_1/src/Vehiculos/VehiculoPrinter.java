@@ -19,4 +19,12 @@ public class VehiculoPrinter {
         System.out.println("capacidadCargaKg: " + c.getCapacidadCargaKg());
         System.out.println("Tiene Acoplado: " + c.isTieneAcoplado());
     }
+
+    public static void mostrarInformacion(Auto a){
+        System.out.println("Patente: " + a.getPatente());
+        System.out.println("Marca: " + a.getMarca());
+        System.out.println("Anio: " + a.getAnio());
+        System.out.println("capacidadCargaKg: " + a.getCapacidadCargaKg());
+        System.out.println("Tiene Acoplado: " + a.getCantidadPasajeros());
+    }
 }

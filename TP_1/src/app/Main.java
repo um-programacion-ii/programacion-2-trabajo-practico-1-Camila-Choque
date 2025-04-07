@@ -2,6 +2,7 @@ package app;
 import Vehiculos.VehiculoPrinter;
 import Vehiculos.Vehiculo;
 import Vehiculos.Camion;
+import Vehiculos.Auto;
 
 
 
@@ -13,7 +14,10 @@ public class Main {
         DatosVehiculo ("AA1489", "Kia", 2024, 30);
         DatosVehiculo ("AB4589", "Mercedes", 2025, 80);
         DatosCamion("AA124","Volvo",2020,15000,true);
-        DatosCamion(null,"Volvo",2020,15000,true);
+        DatosCamion(null,"CAT",2018,15000,true);
+        DatosAuto("AH1234","Mazda",2024,500,5);
+        DatosAuto("AC7894","Toyota",1800,200,2);
+
 
     }
 
@@ -43,5 +47,19 @@ public class Main {
             System.out.println("Error: " + e.getMessage());
             System.out.println("                             ");
         }
+    }
+    //IMPRIME AUTOS Y AUTOS CON ERRORES
+    public static void DatosAuto(String patente, String marca, int anio, double capacidadCargaKg, int cantidadPasajeros) {
+        try {
+            Auto a = new Auto(patente, marca, anio, capacidadCargaKg, cantidadPasajeros);
+            System.out.println("INFORMACION DEL AUTO");
+            VehiculoPrinter.mostrarInformacion(a);
+            System.out.println("                             ");
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+            System.out.println("                             ");
+        }
+
     }
 }
