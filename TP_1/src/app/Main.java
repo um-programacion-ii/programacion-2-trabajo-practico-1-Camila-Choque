@@ -1,5 +1,8 @@
 package app;
+import Vehiculos.VehiculoPrinter;
 import Vehiculos.Vehiculo;
+
+
 
 public class Main {
     public static void main(String[] args) {
@@ -18,7 +21,7 @@ public class Main {
         try {
             Vehiculo v = new Vehiculo(patente, marca, anio, capacidadCargaKg);
             System.out.println("INFORMACION DEL VEHICULO");
-            v.mostrarInformacion();
+            VehiculoPrinter.mostrarInformacion(v);
             System.out.println("                             ");
         }
         catch (IllegalArgumentException e) {
