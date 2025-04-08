@@ -4,13 +4,17 @@
 
 # ⚙️ Instrucciones detalladas de cómo ejecutar el proyecto
 ### 1-Clonar el repositorio.
-    - git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Camila-Choque.git
-    - cd programacion-2-trabajo-practico-1-Camila-Choque
-### 2-Compilar desde el directorio src.
-    - javac Vehiculos/*.java app/*.java
+     git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Camila-Choque.git
+     cd programacion-2-trabajo-practico-1-Camila-Choque
+
+### 2-Navegar al directorio fuente.
+    cd TP_1/src
+    
+### 3-Compilar con el siguiente comando.
+    javac Vehiculos/*.java app/*.java
      
-### 3-Ejecutar programa desde el directorio src.
-    - java app.Main
+### 3-Ejecutar el programa.
+    java app.Main
 
 # 📘 Requisitos Previos
   - IDE recomendado: IntelliJ IDEA
