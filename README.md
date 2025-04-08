@@ -1,3 +1,29 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
+#  👤 Autor
+###   Nombre y Apellido: Camila Choque
+
+# ⚙️ Instrucciones detalladas de cómo ejecutar el proyecto
+### 1-Clonar el repositorio.
+     git clone git@github.com:um-programacion-ii/programacion-2-trabajo-practico-1-Camila-Choque.git
+     cd programacion-2-trabajo-practico-1-Camila-Choque
+
+### 2-Navegar al directorio fuente.
+    cd TP_1/src
+    
+### 3-Compilar con el siguiente comando.
+    javac Vehiculos/*.java app/*.java
+     
+### 3-Ejecutar el programa.
+    java app.Main
+
+# 📘 Requisitos Previos
+  - IDE recomendado: IntelliJ IDEA
+  - Git instalado
+  - Java JDK 8 o superior instalado
+    
+# 💻 Ejemplo de Uso 
+   - Luego de ejecutar el programa apareceran los vehiculos cargados, indicando el tipo de vehiculo y sus datos correspondientes.
+   
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
 ## 📌 Objetivo General
